@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+import { motion } from "motion/react";
 
 export const BentoGrid = ({
     className,
@@ -71,7 +72,11 @@ export const BentoGridItem = ({
     };
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: id * 0.1 }}
             className={cn(
                 "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
                 className
@@ -188,6 +193,6 @@ export const BentoGridItem = ({
                     )}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };

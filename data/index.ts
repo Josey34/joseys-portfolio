@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "I prioritize collaboration and fostering open communication in development teams",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "Based in Surabaya, Indonesia with flexible communication",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -38,7 +38,7 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Tech enthusiast with a passion for development.",
+        title: "Undergraduate IT student with a passion for full-stack development",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently building a simple billng member website",
         description: "The Inside Scoop",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,47 +72,35 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "/ui.earth.com",
+        title: "Run-IO - Running Training Mobile App",
+        des: "Mobile application that provides training recommendations based on user input and tracks running activity with real-time monitoring.",
+        img: "/project-runIO.png",
+        iconLists: ["/react.svg", "/nodejs.svg", "/python.svg", "/firebase.svg"],
+        link: "https://drive.google.com/file/d/169QFzslM5tzsnSs7O633vXjk-1rmnKl4/view?usp=sharing",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/stream.svg",
-            "/c.svg",
-        ],
-        link: "/ui.yoom.com",
+        title: "Disney+ Clone Website",
+        des: "Responsive streaming platform clone with external API integration for movie and series content.",
+        img: "/movie-clone-project.png",
+        iconLists: ["/react.svg", "/tail.svg"],
+        link: "https://movie-clone-lac.vercel.app/",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+        title: "E-Commerce Rooftop Platform",
+        des: "Full-stack e-commerce platform with shipping API integration, featuring complete front-end and back-end implementation.",
         img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "/ui.aiimg.com",
+        iconLists: ["/html.svg", "/tail.svg", "/mysql.svg", "/laravel.svg", "/javascript.svg"],
+        link: "https://github.com/Josey34",
     },
     {
         id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        title: "School Website",
+        des: "Static responsive website providing school information, contact details and registration forms with modern UI/UX design.",
         img: "/p4.svg",
-        iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/three.svg",
-            "/gsap.svg",
-        ],
-        link: "/ui.apple.com",
+        iconLists: ["/html.svg", "/css.svg", "/javascript.svg"],
+        link: "https://github.com/Josey34",
     },
 ];
 
@@ -152,29 +140,29 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        title: "Software Engineering Intern - PT HM Sampoerna Tbk.",
+        desc: "Maintained the AYO Ecosystem app for Philip Morris International (PT HM Sampoerna Tbk) using React Native and standardized QA by automating 500+ scenarios with Cucumber and Playwright.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "React Native Development",
+        desc: "Collaborated in large development teams using Bitbucket for version control and implemented problem-solving workflows in React Native ecosystem.",
+        className: "md:col-span-2",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "Full-Stack Developer",
+        desc: "Built multiple web applications using React, Laravel, NextJS using SQL or NoSQL. Integrated external APIs and implemented responsive designs.",
+        className: "md:col-span-2",
         thumbnail: "/exp3.svg",
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        title: "IT Student - Telkom University",
+        desc: "GPA 3.79/4.00. Studied Database, Programming & Algorithm, Web Programming, Mobile Programming, and QA.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
     },
