@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import { projects } from "@/data";
+import { motion } from "motion/react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/3d-pin";
 import { ParallaxText } from "./ui/ParallaxText";
-import { motion } from "motion/react";
 
 const RecentProjects = () => {
     return (
@@ -27,7 +27,7 @@ const RecentProjects = () => {
                             transition={{ duration: 0.6, delay: index * 0.2 }}
                             className="lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[41rem]"
                         >
-                            <PinContainer title={title} href={link} >
+                            <PinContainer title={title} href={link}>
                                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] overflow-hidden h-[30vh] lg:h-[30vh] mb-10 rounded-xl">
                                     <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                                         <img src="./bg.png" alt="./bg.png" />
@@ -51,7 +51,11 @@ const RecentProjects = () => {
                                             <div
                                                 key={icon}
                                                 className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:w-10 w-8 h-8 flex items-center justify-center"
-                                                style={{ transform: `translateX(-${5 * idx * 2}px)` }}
+                                                style={{
+                                                    transform: `translateX(-${
+                                                        5 * idx * 2
+                                                    }px)`,
+                                                }}
                                             >
                                                 <img
                                                     src={icon}
@@ -62,8 +66,13 @@ const RecentProjects = () => {
                                         ))}
                                     </div>
                                     <div className="flex justify-center items-center">
-                                      <p className="flex lg:text-xl md:text-xs text-sm text-purple">Check Live Site</p>
-                                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                                        <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                                            Check Live Site
+                                        </p>
+                                        <FaLocationArrow
+                                            className="ms-3"
+                                            color="#CBACF9"
+                                        />
                                     </div>
                                 </div>
                             </PinContainer>

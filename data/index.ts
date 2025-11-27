@@ -80,19 +80,19 @@ export const projects = [
     },
     {
         id: 2,
+        title: "NextJS Developer Events App",
+        des: "Full-stack NextJS website that shows developer events with details and form submission and also sentry integration for analytics.",
+        img: "/project-dev-event.png",
+        iconLists: ["/html.svg", "/tail.svg", "/mysql.svg", "/laravel.svg", "/javascript.svg"],
+        link: "https://github.com/Josey34",
+    },
+        {
+        id: 3,
         title: "Disney+ Clone Website",
         des: "Responsive streaming platform clone with external API integration for movie and series content.",
         img: "/movie-clone-project.png",
         iconLists: ["/react.svg", "/tail.svg"],
         link: "https://movie-clone-lac.vercel.app/",
-    },
-    {
-        id: 3,
-        title: "E-Commerce Rooftop Platform",
-        des: "Full-stack e-commerce platform with shipping API integration, featuring complete front-end and back-end implementation.",
-        img: "/p3.svg",
-        iconLists: ["/html.svg", "/tail.svg", "/mysql.svg", "/laravel.svg", "/javascript.svg"],
-        link: "https://github.com/Josey34",
     },
     {
         id: 4,
