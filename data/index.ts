@@ -83,25 +83,26 @@ export const projects = [
         title: "NextJS Developer Events App",
         des: "Full-stack NextJS website that shows developer events with details and form submission and also sentry integration for analytics.",
         img: "/project-dev-event.png",
-        iconLists: ["/html.svg", "/tail.svg", "/mysql.svg", "/laravel.svg", "/javascript.svg"],
-        link: "https://github.com/Josey34",
+        iconLists: ["/nextjs.svg", "/tail.svg", "/mongodb.svg", "/sentry.svg", "/cloudinary.svg"],
+        link: "https://dev-events-nextjs-nine.vercel.app/",
     },
-        {
+    {
         id: 3,
+        title: "InstaClone - Full Stack Social Media Application",
+        des: "Full-featured Instagram clone using MERN stack also using RESTful API with rate limiting, input validation, and security best practices.",
+        img: "/project-instaClone.png",
+        iconLists: ["/mongodb.svg", "/express.svg", "/react.svg", "/nodejs.svg", "/ts.svg", "/tail.svg","/cloudinary.svg"],
+        link: "https://instagram-clone-sage-five.vercel.app/",
+    },
+    {
+        id: 4,
         title: "Disney+ Clone Website",
         des: "Responsive streaming platform clone with external API integration for movie and series content.",
         img: "/movie-clone-project.png",
         iconLists: ["/react.svg", "/tail.svg"],
         link: "https://movie-clone-lac.vercel.app/",
     },
-    {
-        id: 4,
-        title: "School Website",
-        des: "Static responsive website providing school information, contact details and registration forms with modern UI/UX design.",
-        img: "/p4.svg",
-        iconLists: ["/html.svg", "/css.svg", "/javascript.svg"],
-        link: "https://github.com/Josey34",
-    },
+
 ];
 
 export const companies = [
