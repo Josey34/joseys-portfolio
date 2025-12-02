@@ -2,10 +2,10 @@
 
 import { projects } from "@/data";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/3d-pin";
 import { ParallaxText } from "./ui/ParallaxText";
-import Image from "next/image";
 
 const RecentProjects = () => {
     return (
@@ -58,7 +58,7 @@ const RecentProjects = () => {
                                         {iconLists.map((icon, idx) => (
                                             <div
                                                 key={icon}
-                                                className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:w-10 w-8 h-8 flex items-center justify-center"
+                                                className="border border-white/[0.2] rounded-full bg-black lg:w-10 w-8 h-8 flex items-center justify-center"
                                                 style={{
                                                     transform: `translateX(-${
                                                         5 * idx * 2

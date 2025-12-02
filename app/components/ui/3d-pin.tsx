@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
+import React, { useState } from "react";
 
 export const PinContainer = ({
     children,
@@ -35,6 +35,7 @@ export const PinContainer = ({
             )}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={() => href && window.open(href, '_blank')}
         >
             <div
                 style={{
@@ -67,7 +68,7 @@ export const PinPerspective = ({
     href?: string;
 }) => {
     return (
-        <motion.div className="pointer-events-none  w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+        <motion.div className="pointer-events-auto w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500" rel="noopener noreferrer">
             <div className=" w-full h-full -mt-7 flex-none  inset-0">
                 <div className="absolute top-0 inset-x-0  flex justify-center">
                     <a
