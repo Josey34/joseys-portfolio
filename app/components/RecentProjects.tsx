@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/3d-pin";
 import { ParallaxText } from "./ui/ParallaxText";
+import Image from "next/image";
 
 const RecentProjects = () => {
     return (
@@ -30,11 +31,18 @@ const RecentProjects = () => {
                             <PinContainer title={title} href={link}>
                                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] overflow-hidden h-[30vh] lg:h-[30vh] mb-10 rounded-xl">
                                     <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                                        <img src="./bg.png" alt="./bg.png" />
+                                        <Image
+                                            src="/bg.png"
+                                            alt="background pattern"
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
-                                    <img
+                                    <Image
                                         src={img}
                                         alt={title}
+                                        width={570}
+                                        height={300}
                                         className="z-10 absolute bottom-0"
                                     />
                                 </div>
