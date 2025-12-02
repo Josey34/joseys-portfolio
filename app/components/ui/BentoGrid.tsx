@@ -1,17 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
+import animationData from "@/data/confetti.json";
+import { motion } from "motion/react";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
-import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import { motion } from "motion/react";
 
 export const BentoGrid = ({
     className,
@@ -51,8 +51,8 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    const leftLists = ["ReactJS", "Express", "Typescript"];
-    const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+    const leftLists = ["ReactJS", "Express JS", "Typescript"];
+    const rightLists = ["NodeJS", "MongoDB", "NextJS"];
 
     const [copied, setCopied] = useState(false);
 
@@ -135,7 +135,17 @@ export const BentoGridItem = ({
                         {title}
                     </div>
 
-                    {id === 2 && <GlobeDemo />}
+                    {id === 2 && (
+                        <Suspense fallback={
+                            <div className="flex items-center justify-center w-full h-full">
+                                <div className="animate-pulse text-white/50 text-sm">
+                                    Loading interactive globe...
+                                </div>
+                            </div>
+                        }>
+                            <GlobeDemo />
+                        </Suspense>
+                    )}
 
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
