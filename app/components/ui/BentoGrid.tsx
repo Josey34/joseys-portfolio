@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { Suspense, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 import Lottie from "react-lottie";
@@ -23,7 +23,7 @@ export const BentoGrid = ({
     return (
         <div
             className={cn(
-                "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-8 lg:gap-8 mx-auto",
+                "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 sm:gap-6 lg:gap-8 mx-auto",
                 className
             )}
         >
@@ -82,9 +82,9 @@ export const BentoGridItem = ({
                 className
             )}
             style={{
-                background: "rgb(4,7,29)",
+                background: "rgb(2,4,20)",
                 backgroundColor:
-                    "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                    "linear-gradient(90deg, rgba(2,4,20,1) 0%, rgba(8,10,25,1) 100%)",
             }}
         >
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -123,14 +123,14 @@ export const BentoGridItem = ({
                 <div
                     className={cn(
                         titleClassName,
-                        "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+                        "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-4 p-4 sm:px-5 sm:p-5 lg:p-10"
                     )}
                 >
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                    <div className="font-sans font-extralight text-xs sm:text-sm md:text-xs lg:text-base text-[#C1C2D3] z-50 max-w-[90%] md:max-w-32 relative">
                         {description}
                     </div>
                     <div
-                        className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+                        className={`font-sans text-base sm:text-lg lg:text-3xl max-w-[90%] sm:max-w-96 font-bold z-50 leading-tight sm:leading-normal relative`}
                     >
                         {title}
                     </div>
@@ -148,25 +148,25 @@ export const BentoGridItem = ({
                     )}
 
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                        <div className="flex gap-1 sm:gap-2 lg:gap-5 w-fit absolute -right-2 sm:-right-3 lg:-right-2">
+                            <div className="flex flex-col gap-2 sm:gap-3 md:gap-3 lg:gap-8">
                                 {leftLists.map((item, i) => (
                                     <span
                                         key={i}
-                                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                                        className="py-1.5 px-2 sm:py-2 sm:px-3 lg:py-4 lg:px-3 text-[10px] sm:text-xs lg:text-base opacity-50
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] whitespace-nowrap"
                                     >
                                         {item}
                                     </span>
                                 ))}
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                                <span className="py-2 px-2 sm:py-4 sm:px-3 lg:py-4 lg:px-3 rounded-lg text-center bg-[#10132E]"></span>
                             </div>
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                            <div className="flex flex-col gap-2 sm:gap-3 md:gap-3 lg:gap-8">
+                                <span className="py-2 px-2 sm:py-4 sm:px-3 lg:py-4 lg:px-3 rounded-lg text-center bg-[#10132E]"></span>
                                 {rightLists.map((item, i) => (
                                     <span
                                         key={i}
-                                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                                        className="py-1.5 px-2 sm:py-2 sm:px-3 lg:py-4 lg:px-3 text-[10px] sm:text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] whitespace-nowrap"
                                     >
                                         {item}
                                     </span>
@@ -175,7 +175,7 @@ export const BentoGridItem = ({
                         </div>
                     )}
                     {id === 6 && (
-                        <div className="mt-5 relative">
+                        <div className="mt-3 sm:mt-5 relative">
                             <div
                                 className={`absolute -bottom-5 right-0 ${
                                     copied ? "block" : "block"
@@ -197,7 +197,7 @@ export const BentoGridItem = ({
                                 icon={<IoCopyOutline />}
                                 position="left"
                                 handleClick={handleCopy}
-                                otherClasses="!bg-[#161A31]"
+                                otherClasses="!bg-[#161A31] text-xs sm:text-sm"
                             />
                         </div>
                     )}

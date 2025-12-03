@@ -38,7 +38,7 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Undergraduate IT student with a passion for full-stack development",
+        title: "Information Technology graduate, with hands-on experience in full-stack web development.",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
